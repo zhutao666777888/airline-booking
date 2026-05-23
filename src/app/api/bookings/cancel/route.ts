@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import clientPromise from "@/lib/mongodb";
 
+export const dynamic = "force-dynamic";
+
 export async function DELETE(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);

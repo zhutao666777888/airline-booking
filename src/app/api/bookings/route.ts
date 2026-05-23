@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import clientPromise from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
 
+export const dynamic = "force-dynamic";
+
 function generateBookingRef(): string {
   const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
   let ref = "DF";
